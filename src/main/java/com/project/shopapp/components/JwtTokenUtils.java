@@ -1,6 +1,8 @@
 package com.project.shopapp.components;
 
 import com.project.shopapp.exceptions.InvalidParamException;
+import com.project.shopapp.models.Token;
+import com.project.shopapp.repositories.TokenRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -8,6 +10,7 @@ import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.io.Encoders;
 import io.jsonwebtoken.security.Keys;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
@@ -23,7 +26,9 @@ public class JwtTokenUtils {
     @Value("${jwt.expiration}")
     private int expiration; //save to an environment variable
     @Value("${jwt.secretKey}")
+
     private String secretKey;
+    private final TokenRepository tokenRepository;
     public String generateToken(com.project.shopapp.models.User user) throws Exception{
         //properties => claims
         Map<String, Object> claims = new HashMap<>();
@@ -77,6 +82,10 @@ public class JwtTokenUtils {
     }
     public boolean validateToken(String token, UserDetails userDetails) {
         String phoneNumber = extractPhoneNumber(token);
+        Token existingToken = tokenRepository.findByToken(token);
+        if(existingToken == null || existingToken.isRevoked() == true) {
+            return false;
+        }
         return (phoneNumber.equals(userDetails.getUsername()))
                 && !isTokenExpired(token);
     }

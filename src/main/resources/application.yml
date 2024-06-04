@@ -1,34 +1,45 @@
 server:
-  port: 8088  
+  port: 8088
+
 spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/shopapp?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false}
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password:  ${MYSQL_ROOT_PASSWORD:12345678Aa}
+    password: ${MYSQL_ROOT_PASSWORD:12345678Aa}
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: none
     properties:
       hibernate:
-      dialect: org.hibernate.dialect.MySQL8Dialect
-      format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
   servlet:
     multipart:
       max-file-size: 10MB
       max-request-size: 10MB
-  redis:
-    host: ${REDIS_HOST:localhost}
-    port: ${REDIS_PORT:6379}
+
   messages:
     basename: i18n/messages
     encoding: UTF-8
     default-locale: en
+
+  flyway:
+    locations: classpath:/db/migration,classpath:/dev/db/migration
+    baseline-on-migrate: true
+    baseline-version: 0
+
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+
+
 api:
   prefix: api/v1
+
 jwt:
-  expiration: 2592000 #30 days = 30 * 24 * 60 * 60
+  expiration: 2592000 # 30 days = 30 * 24 * 60 * 60
   secretKey: TaqlmGv1iEDMRiFp/pHuID1+T84IABfuA0xXh4GhiUI=
 
 logging.level.org.springframework.security: DEBUG
@@ -41,7 +52,7 @@ springdoc:
     path: /api-docs
   show-actuator: true
 
-#health check
+# health check
 management:
   endpoint:
     health:
@@ -50,7 +61,4 @@ management:
     web:
       base-path: /api/v1/actuator
       exposure:
-        #include: "health"
-        include: "health, info"
-
-
+        include: "health,info"

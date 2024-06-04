@@ -1,13 +1,16 @@
 package com.project.shopapp.controllers;
 
-import com.project.shopapp.models.Role;
 import com.project.shopapp.models.User;
 import com.project.shopapp.responses.LoginResponse;
 import com.project.shopapp.responses.RegisterResponse;
 import com.project.shopapp.responses.UserResponse;
-import com.project.shopapp.services.IUserService;
 import com.project.shopapp.components.LocalizationUtils;
+import com.project.shopapp.services.ITokenService;
+import com.project.shopapp.services.IUserService;
 import com.project.shopapp.utils.MessageKeys;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -19,7 +22,6 @@ import org.springframework.web.bind.annotation.*;
 import com.project.shopapp.dtos.*;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("${api.prefix}/users")
@@ -27,6 +29,7 @@ import java.util.stream.Collectors;
 public class UserController {
     private final IUserService userService;
     private final LocalizationUtils localizationUtils;
+    private final ITokenService tokenService;
 
     @PostMapping("/register")
     //can we register an "admin" user ?
@@ -53,7 +56,7 @@ public class UserController {
 
         try {
             User user = userService.createUser(userDTO);
-            registerResponse.setMessage(localizationUtils.getLocalizedMessage(MessageKeys.REGISTER_SUCCESSFULLY));
+            registerResponse.setMessage("Đăng ký tài khoản thành công");
             registerResponse.setUser(user);
             return ResponseEntity.ok(registerResponse);
         } catch (Exception e) {
@@ -64,7 +67,8 @@ public class UserController {
 
     @PostMapping("/login")
     public ResponseEntity<LoginResponse> login(
-            @Valid @RequestBody UserLoginDTO userLoginDTO
+            @Valid @RequestBody UserLoginDTO userLoginDTO,
+            HttpServletRequest request
     ) {
         // Kiểm tra thông tin đăng nhập và sinh token
         try {
@@ -73,10 +77,14 @@ public class UserController {
                     userLoginDTO.getPassword(),
                     userLoginDTO.getRoleId() == null ? 1 : userLoginDTO.getRoleId()
             );
+            String userAgent = request.getHeader("User-Agent");
+            User user = userService.getUserDetailsFromToken(token);
+            tokenService.addToken(user, token, isMobileDevice(userAgent));
+
             // Trả về token trong response
             return ResponseEntity.ok(LoginResponse.builder()
-                            .message(localizationUtils.getLocalizedMessage(MessageKeys.LOGIN_SUCCESSFULLY))
-                            .token(token)
+                    .message(localizationUtils.getLocalizedMessage(MessageKeys.LOGIN_SUCCESSFULLY))
+                    .token(token)
                     .build());
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(
@@ -85,6 +93,11 @@ public class UserController {
                             .build()
             );
         }
+    }
+    private boolean isMobileDevice(String userAgent) {
+        // Kiểm tra User-Agent header để xác định thiết bị di động
+        // Ví dụ đơn giản:
+        return userAgent.toLowerCase().contains("mobile");
     }
     @PostMapping("/details")
     @PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')")
@@ -101,6 +114,7 @@ public class UserController {
     }
     @PutMapping("/details/{userId}")
     @PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')")
+    @Operation(security = { @SecurityRequirement(name = "bearer-key") })
     public ResponseEntity<UserResponse> updateUserDetails(
             @PathVariable Long userId,
             @RequestBody UpdateUserDTO updatedUserDTO,
