@@ -31,6 +31,7 @@ spring:
     baseline-version: 0
 
   redis:
+    use-redis-cache: false
     host: ${REDIS_HOST:localhost}
     port: ${REDIS_PORT:6379}
 
