@@ -4,7 +4,7 @@ import com.project.shopapp.components.LocalizationUtils;
 import com.project.shopapp.dtos.*;
 import com.project.shopapp.models.Order;
 import com.project.shopapp.responses.*;
-import com.project.shopapp.services.IOrderService;
+import com.project.shopapp.services.orders.IOrderService;
 import com.project.shopapp.utils.MessageKeys;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

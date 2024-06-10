@@ -1,6 +1,5 @@
 package com.project.shopapp.controllers;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.javafaker.Faker;
 import com.project.shopapp.components.LocalizationUtils;
 import com.project.shopapp.dtos.*;
@@ -8,10 +7,9 @@ import com.project.shopapp.models.Product;
 import com.project.shopapp.models.ProductImage;
 import com.project.shopapp.responses.ProductListResponse;
 import com.project.shopapp.responses.ProductResponse;
-import com.project.shopapp.services.IProductRedisService;
-import com.project.shopapp.services.IProductService;
+import com.project.shopapp.services.product.IProductRedisService;
+import com.project.shopapp.services.product.IProductService;
 import com.project.shopapp.utils.MessageKeys;
-import jakarta.annotation.Resource;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,14 +21,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 import jakarta.validation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
 import java.nio.file.Files;

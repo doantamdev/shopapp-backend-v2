@@ -46,6 +46,7 @@ public class UserResponse {
 
     @JsonProperty("role")
     private com.project.shopapp.models.Role role;
+
     public static UserResponse fromUser(com.project.shopapp.models.User user) {
         return UserResponse.builder()
                 .id(user.getId())

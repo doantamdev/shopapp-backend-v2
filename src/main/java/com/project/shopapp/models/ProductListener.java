@@ -1,12 +1,10 @@
 package com.project.shopapp.models;
 
-import com.project.shopapp.controllers.ProductController;
-import com.project.shopapp.services.IProductRedisService;
+import com.project.shopapp.services.product.IProductRedisService;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @AllArgsConstructor
 public class ProductListener {

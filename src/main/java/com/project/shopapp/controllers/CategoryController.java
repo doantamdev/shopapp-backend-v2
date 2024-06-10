@@ -5,9 +5,8 @@ import com.project.shopapp.dtos.*;
 import com.project.shopapp.models.Category;
 import com.project.shopapp.responses.CategoryResponse;
 import com.project.shopapp.responses.UpdateCategoryResponse;
-import com.project.shopapp.services.CategoryService;
+import com.project.shopapp.services.category.CategoryService;
 import com.project.shopapp.utils.MessageKeys;
-import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.MessageSource;
@@ -19,7 +18,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.LocaleResolver;
 
 import java.util.List;
-import java.util.Locale;
 
 @RestController
 @RequestMapping("${api.prefix}/categories")
@@ -74,6 +72,7 @@ public class CategoryController {
         updateCategoryResponse.setMessage(localizationUtils.getLocalizedMessage(MessageKeys.UPDATE_CATEGORY_SUCCESSFULLY));
         return ResponseEntity.ok(updateCategoryResponse);
     }
+
     @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<String> deleteCategory(@PathVariable Long id) {

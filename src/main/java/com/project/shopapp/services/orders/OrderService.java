@@ -1,4 +1,4 @@
-package com.project.shopapp.services;
+package com.project.shopapp.services.orders;
 
 import com.project.shopapp.dtos.CartItemDTO;
 import com.project.shopapp.dtos.OrderDTO;
@@ -11,7 +11,6 @@ import com.project.shopapp.repositories.OrderRepository;
 import com.project.shopapp.repositories.ProductRepository;
 import com.project.shopapp.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.aspectj.weaver.ast.Or;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

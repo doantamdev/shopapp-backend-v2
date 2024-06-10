@@ -1,4 +1,4 @@
-package com.project.shopapp.services;
+package com.project.shopapp.services.user;
 
 import com.project.shopapp.components.JwtTokenUtils;
 import com.project.shopapp.components.LocalizationUtils;
@@ -24,7 +24,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 

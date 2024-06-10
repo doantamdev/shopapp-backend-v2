@@ -1,4 +1,4 @@
-package com.project.shopapp.services;
+package com.project.shopapp.services.token;
 
 import com.project.shopapp.models.Token;
 import com.project.shopapp.models.User;
