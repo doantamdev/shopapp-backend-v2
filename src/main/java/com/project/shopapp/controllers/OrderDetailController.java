@@ -17,7 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("${api.prefix}/order_details")
 @RequiredArgsConstructor
-public class OrderDetailController {
+public class    OrderDetailController {
     private final OrderDetailService orderDetailService;
     private final LocalizationUtils localizationUtils;
     //Thêm mới 1 order detail
@@ -34,6 +34,7 @@ public class OrderDetailController {
 
     }
     @GetMapping("/{id}")
+    @PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')")
     public ResponseEntity<?> getOrderDetail(
             @Valid @PathVariable("id") Long id) throws DataNotFoundException {
         OrderDetail orderDetail = orderDetailService.getOrderDetail(id);
