@@ -4,12 +4,14 @@ import com.project.shopapp.components.LocalizationUtils;
 import com.project.shopapp.dtos.*;
 import com.project.shopapp.models.Category;
 import com.project.shopapp.responses.CategoryResponse;
+import com.project.shopapp.responses.ResponseObject;
 import com.project.shopapp.responses.UpdateCategoryResponse;
 import com.project.shopapp.services.category.CategoryService;
 import com.project.shopapp.utils.MessageKeys;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.MessageSource;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.BindingResult;
@@ -51,33 +53,58 @@ public class CategoryController {
         return ResponseEntity.ok(categoryResponse);
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<ResponseObject> getCategoryById(
+            @PathVariable("id") Long categoryId
+    ) {
+        Category existingCategory = categoryService.getCategoryById(categoryId);
+        return ResponseEntity.ok(ResponseObject.builder()
+                .data(existingCategory)
+                .message("Get category information successfully")
+                .status(HttpStatus.OK)
+                .build());
+    }
+
+
     //Hiện tất cả các categories
     @GetMapping("")
-    public ResponseEntity<List<Category>> getAllCategories(
+    public ResponseEntity<ResponseObject> getAllCategories(
             @RequestParam("page")     int page,
             @RequestParam("limit")    int limit
     ) {
         List<Category> categories = categoryService.getAllCategories();
-        return ResponseEntity.ok(categories);
+        return ResponseEntity.ok(ResponseObject.builder()
+                .message("Get list of categories successfully")
+                .status(HttpStatus.OK)
+                .data(categories)
+                .build());
     }
 
     @PutMapping("/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public ResponseEntity<UpdateCategoryResponse> updateCategory(
+    public ResponseEntity<ResponseObject> updateCategory(
             @PathVariable Long id,
             @Valid @RequestBody CategoryDTO categoryDTO
     ) {
-        UpdateCategoryResponse updateCategoryResponse = new UpdateCategoryResponse();
         categoryService.updateCategory(id, categoryDTO);
-        updateCategoryResponse.setMessage(localizationUtils.getLocalizedMessage(MessageKeys.UPDATE_CATEGORY_SUCCESSFULLY));
-        return ResponseEntity.ok(updateCategoryResponse);
+        return ResponseEntity.ok(ResponseObject
+                .builder()
+                .data(categoryService.getCategoryById(id))
+                .message(localizationUtils.getLocalizedMessage(MessageKeys.UPDATE_CATEGORY_SUCCESSFULLY))
+                .build());
     }
+
 
     @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public ResponseEntity<String> deleteCategory(@PathVariable Long id) {
+    public ResponseEntity<ResponseObject> deleteCategory(@PathVariable Long id) throws Exception{
         categoryService.deleteCategory(id);
-        return ResponseEntity.ok(localizationUtils.getLocalizedMessage(MessageKeys.DELETE_CATEGORY_SUCCESSFULLY));
+        return ResponseEntity.ok(
+                ResponseObject.builder()
+                        .status(HttpStatus.OK)
+                        .message("Delete category successfully")
+                        .build());
     }
+
 }
 

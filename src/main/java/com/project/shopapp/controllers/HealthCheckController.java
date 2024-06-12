@@ -1,8 +1,10 @@
 package com.project.shopapp.controllers;
 
 import com.project.shopapp.models.Category;
+import com.project.shopapp.responses.ResponseObject;
 import com.project.shopapp.services.category.CategoryService;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,15 +19,15 @@ import java.net.InetAddress;
 public class HealthCheckController {
     private final CategoryService categoryService;
     @GetMapping("/health")
-    public ResponseEntity<?> healthCheck() {
-        // Perform additional health checks here
-        try {
-            List<Category> categories = categoryService.getAllCategories();
-            // Get the computer name
-            String computerName = InetAddress.getLocalHost().getHostName();
-            return ResponseEntity.ok("ok, Computer Name: " + computerName);
-        }catch (Exception e) {
-            return ResponseEntity.badRequest().body("failed");
-        }
+    public ResponseEntity<ResponseObject> healthCheck() throws Exception{
+        List<Category> categories = categoryService.getAllCategories();
+        // Get the computer name
+        String computerName = InetAddress.getLocalHost().getHostName();
+        return ResponseEntity.ok(ResponseObject
+                .builder()
+                .message("ok, Computer Name: " + computerName)
+                .status(HttpStatus.OK)
+                .build());
     }
 }
+
