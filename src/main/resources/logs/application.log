@@ -28295,3 +28295,1017 @@ Security filter chain: no match
 2024-06-13 02:46:43.109 [http-nio-8088-exec-6] INFO  c.p.s.c.aspects.PerformanceAspect - Finished execution of calculateCouponValue
 2024-06-13 02:46:43.109 [http-nio-8088-exec-6] INFO  c.p.s.c.aspects.PerformanceAspect - Execution of calculateCouponValue took 13 ms
 2024-06-13 02:46:53.343 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 21:28:02.845 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-14 21:28:02.944 [main] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.11 with PID 20224 (D:\Java\ShopApp\shopapp-backend\target\classes started by ASUS in D:\Java\ShopApp\shopapp-backend)
+2024-06-14 21:28:02.946 [main] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-14 21:28:05.983 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-14 21:28:05.986 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14 21:28:06.456 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 445 ms. Found 11 JPA repository interfaces.
+2024-06-14 21:28:06.506 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-14 21:28:06.507 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-14 21:28:06.527 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 21:28:06.528 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 21:28:06.528 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CouponConditionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 21:28:06.529 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CouponRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 21:28:06.529 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 21:28:06.529 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 21:28:06.529 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductImageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 21:28:06.531 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 21:28:06.532 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 21:28:06.532 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.TokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 21:28:06.533 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 21:28:06.533 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-06-14 21:28:08.165 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-06-14 21:28:08.175 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-06-14 21:28:08.179 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-14 21:28:08.180 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-06-14 21:28:08.305 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-14 21:28:08.307 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5277 ms
+2024-06-14 21:28:09.327 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/shopapp (MySQL 8.0)
+2024-06-14 21:28:09.498 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 6 migrations (execution time 00:00.105s)
+2024-06-14 21:28:09.550 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `shopapp`: 5
+2024-06-14 21:28:09.559 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `shopapp` is up to date. No migration necessary.
+2024-06-14 21:28:09.753 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14 21:28:09.833 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-06-14 21:28:09.837 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-14 21:28:10.006 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 21:28:10.149 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-14 21:28:10.281 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-14 21:28:10.579 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 21:28:11.870 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-14 21:28:11.873 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 21:28:12.245 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-14 21:28:13.050 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/api/v1/actuator'
+2024-06-14 21:28:13.114 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14 21:28:13.182 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.createCategory(com.project.shopapp.dtos.CategoryDTO,org.springframework.validation.BindingResult)
+2024-06-14 21:28:13.183 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CategoryController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.createCategory(com.project.shopapp.dtos.CategoryDTO,org.springframework.validation.BindingResult)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.198 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.updateCategory(java.lang.Long,com.project.shopapp.dtos.CategoryDTO)
+2024-06-14 21:28:13.199 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CategoryController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.updateCategory(java.lang.Long,com.project.shopapp.dtos.CategoryDTO)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.199 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.deleteCategory(java.lang.Long) throws java.lang.Exception
+2024-06-14 21:28:13.199 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CategoryController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.deleteCategory(java.lang.Long) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.296 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CommentController.updateComment(java.lang.Long,com.project.shopapp.dtos.CommentDTO) throws java.lang.Exception
+2024-06-14 21:28:13.296 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CommentController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CommentController.updateComment(java.lang.Long,com.project.shopapp.dtos.CommentDTO) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.300 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CommentController.insertComment(com.project.shopapp.dtos.CommentDTO)
+2024-06-14 21:28:13.300 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CommentController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CommentController.insertComment(com.project.shopapp.dtos.CommentDTO)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.459 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.updateOrder(long,com.project.shopapp.dtos.OrderDTO) throws java.lang.Exception
+2024-06-14 21:28:13.459 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.updateOrder(long,com.project.shopapp.dtos.OrderDTO) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.461 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.createOrder(com.project.shopapp.dtos.OrderDTO,org.springframework.validation.BindingResult) throws java.lang.Exception
+2024-06-14 21:28:13.462 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.createOrder(com.project.shopapp.dtos.OrderDTO,org.springframework.validation.BindingResult) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.462 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.deleteOrder(java.lang.Long)
+2024-06-14 21:28:13.462 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.deleteOrder(java.lang.Long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.472 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.getOrderDetail(java.lang.Long) throws com.project.shopapp.exceptions.DataNotFoundException
+2024-06-14 21:28:13.472 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderDetailController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.getOrderDetail(java.lang.Long) throws com.project.shopapp.exceptions.DataNotFoundException]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.474 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.updateOrderDetail(java.lang.Long,com.project.shopapp.dtos.OrderDetailDTO) throws com.project.shopapp.exceptions.DataNotFoundException,java.lang.Exception
+2024-06-14 21:28:13.474 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderDetailController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.updateOrderDetail(java.lang.Long,com.project.shopapp.dtos.OrderDetailDTO) throws com.project.shopapp.exceptions.DataNotFoundException,java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.474 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.createOrderDetail(com.project.shopapp.dtos.OrderDetailDTO)
+2024-06-14 21:28:13.474 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderDetailController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.createOrderDetail(com.project.shopapp.dtos.OrderDetailDTO)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.475 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.deleteOrderDetail(java.lang.Long)
+2024-06-14 21:28:13.475 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderDetailController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.deleteOrderDetail(java.lang.Long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.499 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.createProduct(com.project.shopapp.dtos.ProductDTO,org.springframework.validation.BindingResult)
+2024-06-14 21:28:13.499 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.createProduct(com.project.shopapp.dtos.ProductDTO,org.springframework.validation.BindingResult)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.501 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.uploadImages(java.lang.Long,java.util.List)
+2024-06-14 21:28:13.501 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.uploadImages(java.lang.Long,java.util.List)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.501 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.updateProduct(long,com.project.shopapp.dtos.ProductDTO)
+2024-06-14 21:28:13.501 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.updateProduct(long,com.project.shopapp.dtos.ProductDTO)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.502 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)
+2024-06-14 21:28:13.502 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.601 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.getAllUser(java.lang.String,int,int) throws java.lang.Exception
+2024-06-14 21:28:13.601 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.getAllUser(java.lang.String,int,int) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.609 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.resetPassword(long)
+2024-06-14 21:28:13.610 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.resetPassword(long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.610 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.blockOrEnable(long,int) throws java.lang.Exception
+2024-06-14 21:28:13.610 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.blockOrEnable(long,int) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.610 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.getUserDetails(java.lang.String) throws java.lang.Exception
+2024-06-14 21:28:13.611 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.getUserDetails(java.lang.String) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.611 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.updateUserDetails(java.lang.Long,com.project.shopapp.dtos.UpdateUserDTO,java.lang.String) throws java.lang.Exception
+2024-06-14 21:28:13.611 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.updateUserDetails(java.lang.Long,com.project.shopapp.dtos.UpdateUserDTO,java.lang.String) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 21:28:13.867 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='EndpointRequestMatcher includes=[*], excludes=[], includeLinks=true']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@671bda0b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e24f4e2, org.springframework.security.web.context.SecurityContextHolderFilter@79f3d15f, org.springframework.security.web.header.HeaderWriterFilter@7787fce1, org.springframework.security.web.authentication.logout.LogoutFilter@19bdf520, com.project.shopapp.filters.JwtTokenFilter@71d81a3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@bbaf70f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1558b8e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@362f4176, org.springframework.security.web.access.ExceptionTranslationFilter@3976dacd, org.springframework.security.web.access.intercept.AuthorizationFilter@6a3b205]
+2024-06-14 21:28:13.882 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2024-06-14 21:28:14.552 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-06-14 21:28:14.575 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-06-14 21:28:14.588 [main] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 12.313 seconds (process running for 13.115)
+2024-06-14 21:28:20.024 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14 21:28:20.024 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-14 21:28:20.026 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-14 21:28:20.052 [http-nio-8088-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/actuator/health':
+
+org.apache.catalina.connector.RequestFacade@79a23d20
+
+servletPath:/api/v1/actuator/health
+pathInfo:null
+headers: 
+user-agent: PostmanRuntime/7.39.0
+accept: */*
+cache-control: no-cache
+postman-token: 26c177bc-c09f-4026-82d4-2e5a1993f823
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+
+
+Security filter chain: no match
+
+
+************************************************************
+
+
+2024-06-14 21:28:27.850 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 22:03:21.422 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-14 22:03:21.471 [main] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.11 with PID 20048 (D:\Java\ShopApp\shopapp-backend\target\classes started by ASUS in D:\Java\ShopApp\shopapp-backend)
+2024-06-14 22:03:21.473 [main] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-14 22:03:22.916 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-14 22:03:22.920 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14 22:03:23.136 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 205 ms. Found 11 JPA repository interfaces.
+2024-06-14 22:03:23.158 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-14 22:03:23.160 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-14 22:03:23.181 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:03:23.183 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:03:23.183 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CouponConditionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:03:23.184 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CouponRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:03:23.184 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:03:23.184 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:03:23.184 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductImageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:03:23.187 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:03:23.188 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:03:23.188 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.TokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:03:23.188 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:03:23.188 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-06-14 22:03:24.729 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-06-14 22:03:24.747 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-06-14 22:03:24.754 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-14 22:03:24.755 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-06-14 22:03:24.988 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-14 22:03:24.991 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3467 ms
+2024-06-14 22:03:25.888 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/shopapp (MySQL 8.0)
+2024-06-14 22:03:25.958 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 6 migrations (execution time 00:00.042s)
+2024-06-14 22:03:25.972 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `shopapp`: 5
+2024-06-14 22:03:25.975 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `shopapp` is up to date. No migration necessary.
+2024-06-14 22:03:26.158 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14 22:03:26.324 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-06-14 22:03:26.326 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-14 22:03:26.467 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 22:03:26.574 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-14 22:03:26.612 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-14 22:03:26.859 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 22:03:28.392 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-14 22:03:28.394 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 22:03:28.898 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-14 22:03:29.974 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/api/v1/actuator'
+2024-06-14 22:03:30.036 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14 22:03:30.208 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.createCategory(com.project.shopapp.dtos.CategoryDTO,org.springframework.validation.BindingResult)
+2024-06-14 22:03:30.211 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CategoryController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.createCategory(com.project.shopapp.dtos.CategoryDTO,org.springframework.validation.BindingResult)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.224 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.deleteCategory(java.lang.Long) throws java.lang.Exception
+2024-06-14 22:03:30.224 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CategoryController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.deleteCategory(java.lang.Long) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.225 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.updateCategory(java.lang.Long,com.project.shopapp.dtos.CategoryDTO)
+2024-06-14 22:03:30.225 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CategoryController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.updateCategory(java.lang.Long,com.project.shopapp.dtos.CategoryDTO)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.363 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CommentController.updateComment(java.lang.Long,com.project.shopapp.dtos.CommentDTO) throws java.lang.Exception
+2024-06-14 22:03:30.364 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CommentController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CommentController.updateComment(java.lang.Long,com.project.shopapp.dtos.CommentDTO) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.368 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CommentController.insertComment(com.project.shopapp.dtos.CommentDTO)
+2024-06-14 22:03:30.368 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CommentController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CommentController.insertComment(com.project.shopapp.dtos.CommentDTO)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.552 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.deleteOrder(java.lang.Long)
+2024-06-14 22:03:30.553 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.deleteOrder(java.lang.Long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.556 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.updateOrder(long,com.project.shopapp.dtos.OrderDTO) throws java.lang.Exception
+2024-06-14 22:03:30.556 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.updateOrder(long,com.project.shopapp.dtos.OrderDTO) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.556 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.createOrder(com.project.shopapp.dtos.OrderDTO,org.springframework.validation.BindingResult) throws java.lang.Exception
+2024-06-14 22:03:30.557 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.createOrder(com.project.shopapp.dtos.OrderDTO,org.springframework.validation.BindingResult) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.574 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.createOrderDetail(com.project.shopapp.dtos.OrderDetailDTO)
+2024-06-14 22:03:30.575 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderDetailController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.createOrderDetail(com.project.shopapp.dtos.OrderDetailDTO)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.577 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.getOrderDetail(java.lang.Long) throws com.project.shopapp.exceptions.DataNotFoundException
+2024-06-14 22:03:30.578 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderDetailController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.getOrderDetail(java.lang.Long) throws com.project.shopapp.exceptions.DataNotFoundException]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.579 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.updateOrderDetail(java.lang.Long,com.project.shopapp.dtos.OrderDetailDTO) throws com.project.shopapp.exceptions.DataNotFoundException,java.lang.Exception
+2024-06-14 22:03:30.579 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderDetailController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.updateOrderDetail(java.lang.Long,com.project.shopapp.dtos.OrderDetailDTO) throws com.project.shopapp.exceptions.DataNotFoundException,java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.579 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.deleteOrderDetail(java.lang.Long)
+2024-06-14 22:03:30.579 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderDetailController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.deleteOrderDetail(java.lang.Long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.620 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.createProduct(com.project.shopapp.dtos.ProductDTO,org.springframework.validation.BindingResult)
+2024-06-14 22:03:30.621 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.createProduct(com.project.shopapp.dtos.ProductDTO,org.springframework.validation.BindingResult)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.624 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.updateProduct(long,com.project.shopapp.dtos.ProductDTO)
+2024-06-14 22:03:30.625 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.updateProduct(long,com.project.shopapp.dtos.ProductDTO)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.625 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)
+2024-06-14 22:03:30.625 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.626 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.uploadImages(java.lang.Long,java.util.List)
+2024-06-14 22:03:30.626 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.uploadImages(java.lang.Long,java.util.List)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.787 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.resetPassword(long)
+2024-06-14 22:03:30.788 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.resetPassword(long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.807 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.blockOrEnable(long,int) throws java.lang.Exception
+2024-06-14 22:03:30.808 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.blockOrEnable(long,int) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.808 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.getAllUser(java.lang.String,int,int) throws java.lang.Exception
+2024-06-14 22:03:30.809 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.getAllUser(java.lang.String,int,int) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.809 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.getUserDetails(java.lang.String) throws java.lang.Exception
+2024-06-14 22:03:30.810 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.getUserDetails(java.lang.String) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:30.810 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.updateUserDetails(java.lang.Long,com.project.shopapp.dtos.UpdateUserDTO,java.lang.String) throws java.lang.Exception
+2024-06-14 22:03:30.810 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.updateUserDetails(java.lang.Long,com.project.shopapp.dtos.UpdateUserDTO,java.lang.String) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:03:31.163 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='EndpointRequestMatcher includes=[*], excludes=[], includeLinks=true']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@bac9c81, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a15b749, org.springframework.security.web.context.SecurityContextHolderFilter@6e12352d, org.springframework.security.web.header.HeaderWriterFilter@4975f618, org.springframework.security.web.authentication.logout.LogoutFilter@6bf1bfec, com.project.shopapp.filters.JwtTokenFilter@4b28d787, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28a824a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@787b688a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b96476b, org.springframework.security.web.access.ExceptionTranslationFilter@74e72805, org.springframework.security.web.access.intercept.AuthorizationFilter@4c33ad71]
+2024-06-14 22:03:31.173 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2024-06-14 22:03:31.976 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-06-14 22:03:32.080 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.4.1
+2024-06-14 22:03:32.081 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8a516edc2755df89
+2024-06-14 22:03:32.081 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1718377412080
+2024-06-14 22:03:32.742 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2024-06-14 22:03:32.746 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-06-14 22:03:32.746 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-14 22:03:32.747 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-06-14 22:03:32.751 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-06-14 22:03:32.761 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-06-14 22:03:32.792 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-groupA-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = groupA
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2024-06-14 22:03:32.836 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.4.1
+2024-06-14 22:03:32.837 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8a516edc2755df89
+2024-06-14 22:03:32.837 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1718377412836
+2024-06-14 22:03:32.849 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-groupA-1, groupId=groupA] Subscribed to topic(s): get-all-categories, insert-a-category
+2024-06-14 22:03:32.868 [main] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 11.965 seconds (process running for 12.701)
+2024-06-14 22:03:32.880 [groupA-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-groupA-1, groupId=groupA] Resetting the last seen epoch of partition get-all-categories-0 to 0 since the associated topicId changed from null to 0FFhz9YjQ-SmS4IuNM8NQQ
+2024-06-14 22:03:32.881 [groupA-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-groupA-1, groupId=groupA] Resetting the last seen epoch of partition insert-a-category-0 to 0 since the associated topicId changed from null to um6iTF4GS4q9QfPBsg7Pzw
+2024-06-14 22:03:32.888 [groupA-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-groupA-1, groupId=groupA] Cluster ID: bAiySHPtQOSTOJvtToJB0g
+2024-06-14 22:03:33.977 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2024-06-14 22:03:33.979 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] (Re-)joining group
+2024-06-14 22:03:34.008 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Request joining group due to: need to re-join with the given member-id: consumer-groupA-1-0115bfdb-9749-4562-900f-e38bf5e8ff98
+2024-06-14 22:03:34.008 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2024-06-14 22:03:34.008 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] (Re-)joining group
+2024-06-14 22:03:37.029 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Successfully joined group with generation Generation{generationId=1, memberId='consumer-groupA-1-0115bfdb-9749-4562-900f-e38bf5e8ff98', protocol='range'}
+2024-06-14 22:03:37.031 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Finished assignment for group at generation 1: {consumer-groupA-1-0115bfdb-9749-4562-900f-e38bf5e8ff98=Assignment(partitions=[get-all-categories-0, insert-a-category-0])}
+2024-06-14 22:03:37.078 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Successfully synced group in generation Generation{generationId=1, memberId='consumer-groupA-1-0115bfdb-9749-4562-900f-e38bf5e8ff98', protocol='range'}
+2024-06-14 22:03:37.078 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Notifying assignor about the new Assignment(partitions=[get-all-categories-0, insert-a-category-0])
+2024-06-14 22:03:37.080 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Adding newly assigned partitions: get-all-categories-0, insert-a-category-0
+2024-06-14 22:03:37.095 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Found no committed offset for partition insert-a-category-0
+2024-06-14 22:03:37.095 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Found no committed offset for partition get-all-categories-0
+2024-06-14 22:03:37.102 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Found no committed offset for partition insert-a-category-0
+2024-06-14 22:03:37.102 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Found no committed offset for partition get-all-categories-0
+2024-06-14 22:03:37.117 [groupA-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-groupA-1, groupId=groupA] Resetting offset for partition insert-a-category-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}.
+2024-06-14 22:03:37.117 [groupA-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-groupA-1, groupId=groupA] Resetting offset for partition get-all-categories-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}.
+2024-06-14 22:03:37.137 [groupA-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - groupA: partitions assigned: [get-all-categories-0, insert-a-category-0]
+2024-06-14 22:06:32.277 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14 22:06:32.277 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-14 22:06:32.278 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-14 22:06:32.300 [http-nio-8088-exec-2] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/categories?page=1&limit=3':
+
+org.apache.catalina.connector.RequestFacade@4fb168b6
+
+servletPath:/api/v1/categories
+pathInfo:null
+headers: 
+user-agent: PostmanRuntime/7.39.0
+accept: */*
+cache-control: no-cache
+postman-token: 34635891-a7e3-4fdd-8c3d-8ac214641f60
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+
+
+Security filter chain: no match
+
+
+************************************************************
+
+
+2024-06-14 22:06:32.330 [http-nio-8088-exec-2] INFO  c.p.s.c.aspects.PerformanceAspect - Starting execution of getAllCategories
+2024-06-14 22:06:32.479 [http-nio-8088-exec-2] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2024-06-14 22:06:32.493 [http-nio-8088-exec-2] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2024-06-14 22:06:32.509 [http-nio-8088-exec-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.4.1
+2024-06-14 22:06:32.509 [http-nio-8088-exec-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8a516edc2755df89
+2024-06-14 22:06:32.509 [http-nio-8088-exec-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1718377592509
+2024-06-14 22:06:32.522 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition get-all-categories-0 to 0 since the associated topicId changed from null to 0FFhz9YjQ-SmS4IuNM8NQQ
+2024-06-14 22:06:32.522 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: bAiySHPtQOSTOJvtToJB0g
+2024-06-14 22:06:32.551 [http-nio-8088-exec-2] INFO  c.p.s.c.aspects.PerformanceAspect - Finished execution of getAllCategories
+2024-06-14 22:06:32.554 [http-nio-8088-exec-2] INFO  c.p.s.c.aspects.PerformanceAspect - Execution of getAllCategories took 222 ms
+2024-06-14 22:06:32.562 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
+2024-06-14 22:07:25.042 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Revoke previously assigned partitions get-all-categories-0, insert-a-category-0
+2024-06-14 22:07:25.043 [groupA-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - groupA: partitions revoked: [get-all-categories-0, insert-a-category-0]
+2024-06-14 22:07:25.043 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Member consumer-groupA-1-0115bfdb-9749-4562-900f-e38bf5e8ff98 sending LeaveGroup request to coordinator 127.0.0.1:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2024-06-14 22:07:25.044 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-06-14 22:07:25.044 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Request joining group due to: consumer pro-actively leaving the group
+2024-06-14 22:07:25.044 [groupA-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-groupA-1, groupId=groupA] Unsubscribed all topics or patterns and assigned partitions
+2024-06-14 22:07:25.044 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-06-14 22:07:25.044 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Request joining group due to: consumer pro-actively leaving the group
+2024-06-14 22:07:25.055 [groupA-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-06-14 22:07:25.055 [groupA-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-14 22:07:25.056 [groupA-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-06-14 22:07:25.057 [groupA-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-groupA-1 unregistered
+2024-06-14 22:07:25.057 [groupA-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - groupA: Consumer stopped
+2024-06-14 22:07:25.078 [SpringApplicationShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-06-14 22:07:25.080 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-06-14 22:07:25.080 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-14 22:07:25.080 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-06-14 22:07:25.080 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2024-06-14 22:07:25.082 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 22:07:56.214 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-14 22:07:56.251 [main] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.11 with PID 20240 (D:\Java\ShopApp\shopapp-backend\target\classes started by ASUS in D:\Java\ShopApp\shopapp-backend)
+2024-06-14 22:07:56.252 [main] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-14 22:07:57.579 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-14 22:07:57.582 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14 22:07:57.780 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 187 ms. Found 11 JPA repository interfaces.
+2024-06-14 22:07:57.799 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-14 22:07:57.801 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-14 22:07:57.819 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:07:57.820 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:07:57.821 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CouponConditionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:07:57.821 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CouponRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:07:57.821 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:07:57.821 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:07:57.821 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductImageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:07:57.823 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:07:57.824 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:07:57.824 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.TokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:07:57.824 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-06-14 22:07:57.824 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-06-14 22:07:59.184 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-06-14 22:07:59.197 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-06-14 22:07:59.202 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-14 22:07:59.203 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-06-14 22:07:59.384 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-14 22:07:59.387 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3087 ms
+2024-06-14 22:08:00.435 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/shopapp (MySQL 8.0)
+2024-06-14 22:08:00.548 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 6 migrations (execution time 00:00.071s)
+2024-06-14 22:08:00.577 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `shopapp`: 5
+2024-06-14 22:08:00.582 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `shopapp` is up to date. No migration necessary.
+2024-06-14 22:08:00.822 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14 22:08:00.977 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-06-14 22:08:00.984 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-14 22:08:01.240 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 22:08:01.453 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-14 22:08:01.504 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-14 22:08:01.849 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 22:08:03.647 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-14 22:08:03.650 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 22:08:04.192 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-14 22:08:05.516 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/api/v1/actuator'
+2024-06-14 22:08:05.631 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14 22:08:05.989 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.createCategory(com.project.shopapp.dtos.CategoryDTO,org.springframework.validation.BindingResult)
+2024-06-14 22:08:05.994 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CategoryController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.createCategory(com.project.shopapp.dtos.CategoryDTO,org.springframework.validation.BindingResult)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.033 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.updateCategory(java.lang.Long,com.project.shopapp.dtos.CategoryDTO)
+2024-06-14 22:08:06.034 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CategoryController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.updateCategory(java.lang.Long,com.project.shopapp.dtos.CategoryDTO)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.034 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.deleteCategory(java.lang.Long) throws java.lang.Exception
+2024-06-14 22:08:06.034 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CategoryController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CategoryController.deleteCategory(java.lang.Long) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.180 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CommentController.updateComment(java.lang.Long,com.project.shopapp.dtos.CommentDTO) throws java.lang.Exception
+2024-06-14 22:08:06.180 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CommentController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CommentController.updateComment(java.lang.Long,com.project.shopapp.dtos.CommentDTO) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.182 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CommentController.insertComment(com.project.shopapp.dtos.CommentDTO)
+2024-06-14 22:08:06.182 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.CommentController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.CommentController.insertComment(com.project.shopapp.dtos.CommentDTO)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.409 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.deleteOrder(java.lang.Long)
+2024-06-14 22:08:06.409 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.deleteOrder(java.lang.Long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.412 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.createOrder(com.project.shopapp.dtos.OrderDTO,org.springframework.validation.BindingResult) throws java.lang.Exception
+2024-06-14 22:08:06.413 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.createOrder(com.project.shopapp.dtos.OrderDTO,org.springframework.validation.BindingResult) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.413 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.updateOrder(long,com.project.shopapp.dtos.OrderDTO) throws java.lang.Exception
+2024-06-14 22:08:06.413 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.updateOrder(long,com.project.shopapp.dtos.OrderDTO) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.430 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.createOrderDetail(com.project.shopapp.dtos.OrderDetailDTO)
+2024-06-14 22:08:06.430 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderDetailController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.createOrderDetail(com.project.shopapp.dtos.OrderDetailDTO)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.432 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.getOrderDetail(java.lang.Long) throws com.project.shopapp.exceptions.DataNotFoundException
+2024-06-14 22:08:06.432 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderDetailController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.getOrderDetail(java.lang.Long) throws com.project.shopapp.exceptions.DataNotFoundException]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.432 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.deleteOrderDetail(java.lang.Long)
+2024-06-14 22:08:06.432 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderDetailController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.deleteOrderDetail(java.lang.Long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.432 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.updateOrderDetail(java.lang.Long,com.project.shopapp.dtos.OrderDetailDTO) throws com.project.shopapp.exceptions.DataNotFoundException,java.lang.Exception
+2024-06-14 22:08:06.433 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderDetailController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderDetailController.updateOrderDetail(java.lang.Long,com.project.shopapp.dtos.OrderDetailDTO) throws com.project.shopapp.exceptions.DataNotFoundException,java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.471 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.createProduct(com.project.shopapp.dtos.ProductDTO,org.springframework.validation.BindingResult)
+2024-06-14 22:08:06.472 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.createProduct(com.project.shopapp.dtos.ProductDTO,org.springframework.validation.BindingResult)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.474 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)
+2024-06-14 22:08:06.474 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.474 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.uploadImages(java.lang.Long,java.util.List)
+2024-06-14 22:08:06.474 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.uploadImages(java.lang.Long,java.util.List)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.474 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.updateProduct(long,com.project.shopapp.dtos.ProductDTO)
+2024-06-14 22:08:06.474 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.updateProduct(long,com.project.shopapp.dtos.ProductDTO)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.611 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.resetPassword(long)
+2024-06-14 22:08:06.612 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.resetPassword(long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.626 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.getAllUser(java.lang.String,int,int) throws java.lang.Exception
+2024-06-14 22:08:06.626 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.getAllUser(java.lang.String,int,int) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.627 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.getUserDetails(java.lang.String) throws java.lang.Exception
+2024-06-14 22:08:06.627 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.getUserDetails(java.lang.String) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.627 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.blockOrEnable(long,int) throws java.lang.Exception
+2024-06-14 22:08:06.627 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.blockOrEnable(long,int) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:06.627 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\') or hasRole(\'ROLE_USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.updateUserDetails(java.lang.Long,com.project.shopapp.dtos.UpdateUserDTO,java.lang.String) throws java.lang.Exception
+2024-06-14 22:08:06.627 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.UserController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.UserController.updateUserDetails(java.lang.Long,com.project.shopapp.dtos.UpdateUserDTO,java.lang.String) throws java.lang.Exception]] with attributes [[authorize: 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')', filter: 'null', filterTarget: 'null']]
+2024-06-14 22:08:07.014 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='EndpointRequestMatcher includes=[*], excludes=[], includeLinks=true']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ffb60a4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21fd75f2, org.springframework.security.web.context.SecurityContextHolderFilter@6900e105, org.springframework.security.web.header.HeaderWriterFilter@2df2d46d, org.springframework.security.web.authentication.logout.LogoutFilter@285289cd, com.project.shopapp.filters.JwtTokenFilter@66dd3ed1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9d037dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64f5cec8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ccb26a0, org.springframework.security.web.access.ExceptionTranslationFilter@22e7efe, org.springframework.security.web.access.intercept.AuthorizationFilter@4d5f1c98]
+2024-06-14 22:08:07.041 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2024-06-14 22:08:07.989 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-06-14 22:08:08.115 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.4.1
+2024-06-14 22:08:08.116 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8a516edc2755df89
+2024-06-14 22:08:08.116 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1718377688113
+2024-06-14 22:08:08.433 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2024-06-14 22:08:08.437 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-06-14 22:08:08.437 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-14 22:08:08.437 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-06-14 22:08:08.441 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-06-14 22:08:08.451 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-06-14 22:08:08.472 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-groupA-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = groupA
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2024-06-14 22:08:08.500 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.4.1
+2024-06-14 22:08:08.500 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8a516edc2755df89
+2024-06-14 22:08:08.500 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1718377688500
+2024-06-14 22:08:08.511 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-groupA-1, groupId=groupA] Subscribed to topic(s): get-all-categories, insert-a-category
+2024-06-14 22:08:08.527 [main] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 12.623 seconds (process running for 13.66)
+2024-06-14 22:08:08.532 [groupA-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-groupA-1, groupId=groupA] Resetting the last seen epoch of partition get-all-categories-0 to 0 since the associated topicId changed from null to 0FFhz9YjQ-SmS4IuNM8NQQ
+2024-06-14 22:08:08.533 [groupA-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-groupA-1, groupId=groupA] Resetting the last seen epoch of partition insert-a-category-0 to 0 since the associated topicId changed from null to um6iTF4GS4q9QfPBsg7Pzw
+2024-06-14 22:08:08.533 [groupA-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-groupA-1, groupId=groupA] Cluster ID: bAiySHPtQOSTOJvtToJB0g
+2024-06-14 22:08:08.534 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2024-06-14 22:08:08.537 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] (Re-)joining group
+2024-06-14 22:08:08.557 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Request joining group due to: need to re-join with the given member-id: consumer-groupA-1-6248e064-4d23-4172-88d4-b268042a6588
+2024-06-14 22:08:08.557 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2024-06-14 22:08:08.557 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] (Re-)joining group
+2024-06-14 22:08:11.562 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Successfully joined group with generation Generation{generationId=3, memberId='consumer-groupA-1-6248e064-4d23-4172-88d4-b268042a6588', protocol='range'}
+2024-06-14 22:08:11.564 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Finished assignment for group at generation 3: {consumer-groupA-1-6248e064-4d23-4172-88d4-b268042a6588=Assignment(partitions=[get-all-categories-0, insert-a-category-0])}
+2024-06-14 22:08:11.569 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Successfully synced group in generation Generation{generationId=3, memberId='consumer-groupA-1-6248e064-4d23-4172-88d4-b268042a6588', protocol='range'}
+2024-06-14 22:08:11.570 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Notifying assignor about the new Assignment(partitions=[get-all-categories-0, insert-a-category-0])
+2024-06-14 22:08:11.572 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Adding newly assigned partitions: get-all-categories-0, insert-a-category-0
+2024-06-14 22:08:11.582 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Setting offset for partition get-all-categories-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2024-06-14 22:08:11.582 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Setting offset for partition insert-a-category-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+2024-06-14 22:08:11.583 [groupA-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - groupA: partitions assigned: [get-all-categories-0, insert-a-category-0]
+2024-06-14 22:08:31.801 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14 22:08:31.801 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-14 22:08:31.804 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-06-14 22:08:31.828 [http-nio-8088-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/categories?page=1&limit=3':
+
+org.apache.catalina.connector.RequestFacade@66ab267e
+
+servletPath:/api/v1/categories
+pathInfo:null
+headers: 
+user-agent: PostmanRuntime/7.39.0
+accept: */*
+cache-control: no-cache
+postman-token: 28fffbe2-8324-4fdf-bd01-9266d34c2c73
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+
+
+Security filter chain: no match
+
+
+************************************************************
+
+
+2024-06-14 22:08:31.855 [http-nio-8088-exec-1] INFO  c.p.s.c.aspects.PerformanceAspect - Starting execution of getAllCategories
+2024-06-14 22:08:44.846 [http-nio-8088-exec-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2024-06-14 22:08:44.882 [http-nio-8088-exec-1] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2024-06-14 22:08:44.951 [http-nio-8088-exec-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.4.1
+2024-06-14 22:08:44.951 [http-nio-8088-exec-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8a516edc2755df89
+2024-06-14 22:08:44.952 [http-nio-8088-exec-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1718377724951
+2024-06-14 22:08:44.957 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: bAiySHPtQOSTOJvtToJB0g
+2024-06-14 22:08:44.958 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 1 with epoch 0
+2024-06-14 22:08:45.004 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition get-all-categories-0 to 0 since the associated topicId changed from null to 0FFhz9YjQ-SmS4IuNM8NQQ
+2024-06-14 22:09:52.658 [kafka-coordinator-heartbeat-thread | groupA] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2024-06-14 22:09:52.659 [kafka-coordinator-heartbeat-thread | groupA] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Requesting disconnect from last known coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2024-06-14 22:09:52.661 [kafka-coordinator-heartbeat-thread | groupA] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-groupA-1, groupId=groupA] Client requested disconnect from node 2147483646
+2024-06-14 22:09:52.670 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2024-06-14 22:09:52.670 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+2024-06-14 22:09:52.670 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Requesting disconnect from last known coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+2024-06-14 22:09:52.675 [kafka-producer-network-thread | producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Disconnecting from node 1 due to request timeout.
+2024-06-14 22:09:52.676 [kafka-producer-network-thread | producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Cancelled in-flight PRODUCE request with correlation id 5 due to node 1 being disconnected (elapsed time since creation: 67615ms, elapsed time since send: 67615ms, request timeout: 30000ms)
+2024-06-14 22:09:52.677 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 5 on topic-partition get-all-categories-0, retrying (2147483646 attempts left). Error: NETWORK_EXCEPTION. Error Message: Disconnected from node 1
+2024-06-14 22:09:52.678 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Received invalid metadata error in produce request on partition get-all-categories-0 due to org.apache.kafka.common.errors.NetworkException: Disconnected from node 1. Going to request metadata update now
+2024-06-14 22:09:52.678 [http-nio-8088-exec-1] INFO  c.p.s.c.aspects.PerformanceAspect - Finished execution of getAllCategories
+2024-06-14 22:09:52.680 [http-nio-8088-exec-1] INFO  c.p.s.c.aspects.PerformanceAspect - Execution of getAllCategories took 80823 ms
+2024-06-14 22:09:52.772 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Revoke previously assigned partitions get-all-categories-0, insert-a-category-0
+2024-06-14 22:09:52.773 [groupA-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - groupA: partitions revoked: [get-all-categories-0, insert-a-category-0]
+2024-06-14 22:09:52.774 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-06-14 22:09:52.774 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Request joining group due to: consumer pro-actively leaving the group
+2024-06-14 22:09:52.774 [groupA-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-groupA-1, groupId=groupA] Unsubscribed all topics or patterns and assigned partitions
+2024-06-14 22:09:52.775 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-06-14 22:09:52.775 [groupA-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-groupA-1, groupId=groupA] Request joining group due to: consumer pro-actively leaving the group
+2024-06-14 22:09:52.776 [groupA-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-06-14 22:09:52.776 [groupA-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-14 22:09:52.776 [groupA-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-06-14 22:09:52.780 [groupA-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-groupA-1 unregistered
+2024-06-14 22:09:52.781 [groupA-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - groupA: Consumer stopped
+2024-06-14 22:09:52.821 [SpringApplicationShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-06-14 22:09:52.824 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2024-06-14 22:09:52.825 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-14 22:09:52.825 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2024-06-14 22:09:52.825 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2024-06-14 22:09:52.829 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
