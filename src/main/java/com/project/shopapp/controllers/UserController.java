@@ -12,18 +12,19 @@ import com.project.shopapp.services.token.ITokenService;
 import com.project.shopapp.services.user.IUserService;
 import com.project.shopapp.components.LocalizationUtils;
 import com.project.shopapp.utils.MessageKeys;
+import com.project.shopapp.utils.ValidationUtils;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.actuate.autoconfigure.observation.ObservationProperties;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
@@ -89,6 +90,25 @@ public class UserController {
                     .message(errorMessages.toString())
                     .build());
         }
+        if (userDTO.getEmail() == null || userDTO.getEmail().trim().isBlank()) {
+            if (userDTO.getPhoneNumber() == null || userDTO.getPhoneNumber().isBlank()) {
+                return ResponseEntity.badRequest().body(ResponseObject.builder()
+                        .status(HttpStatus.BAD_REQUEST)
+                        .data(null)
+                        .message("At least email or phone number is required")
+                        .build());
+            } else {
+                //phone number not blank
+                if (!ValidationUtils.isValidPhoneNumber(userDTO.getPhoneNumber())) {
+                    throw new Exception("Invalid phone number");
+                }
+            }
+        } else {
+            //Email not blank
+            if (!ValidationUtils.isValidEmail(userDTO.getEmail())) {
+                throw new Exception("Invalid email format");
+            }
+        }
 
         if (!userDTO.getPassword().equals(userDTO.getRetypePassword())) {
             //registerResponse.setMessage();
@@ -102,7 +122,7 @@ public class UserController {
         return ResponseEntity.ok(ResponseObject.builder()
                 .status(HttpStatus.CREATED)
                 .data(UserResponse.fromUser(user))
-                .message("Đăng ký tài khoản thành công")
+                .message("Account registration successful")
                 .build());
     }
 
@@ -112,11 +132,7 @@ public class UserController {
             HttpServletRequest request
     ) throws Exception {
         // Kiểm tra thông tin đăng nhập và sinh token
-        String token = userService.login(
-                userLoginDTO.getPhoneNumber(),
-                userLoginDTO.getPassword(),
-                userLoginDTO.getRoleId() == null ? 1 : userLoginDTO.getRoleId()
-        );
+        String token = userService.login(userLoginDTO);
         String userAgent = request.getHeader("User-Agent");
         User userDetail = userService.getUserDetailsFromToken(token);
         Token jwtToken = tokenService.addToken(userDetail, token, isMobileDevice(userAgent));
@@ -127,7 +143,7 @@ public class UserController {
                 .tokenType(jwtToken.getTokenType())
                 .refreshToken(jwtToken.getRefreshToken())
                 .username(userDetail.getUsername())
-                .roles(userDetail.getAuthorities().stream().map(item -> item.getAuthority()).toList())
+                .roles(userDetail.getAuthorities().stream().map(GrantedAuthority::getAuthority).toList())
                 .id(userDetail.getId())
                 .build();
         return ResponseEntity.ok().body(ResponseObject.builder()
@@ -136,6 +152,7 @@ public class UserController {
                 .status(HttpStatus.OK)
                 .build());
     }
+
     @PostMapping("/refreshToken")
     public ResponseEntity<ResponseObject> refreshToken(
             @Valid @RequestBody RefreshTokenDTO refreshTokenDTO

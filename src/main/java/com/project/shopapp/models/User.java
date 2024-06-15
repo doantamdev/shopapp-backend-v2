@@ -30,6 +30,11 @@ public class User extends BaseEntity implements UserDetails {
     @Column(name = "phone_number", length = 10, nullable = false)
     private String phoneNumber;
 
+    // ALTER TABLE users ADD COLUMN email VARCHAR(255) DEFAULT '';
+    @Column(name = "email", length = 255, nullable = true)
+    private String email;
+
+
     @Column(name = "address", length = 200)
     private String address;
 

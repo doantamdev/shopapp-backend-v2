@@ -4,6 +4,7 @@ import com.project.shopapp.components.JwtTokenUtils;
 import com.project.shopapp.components.LocalizationUtils;
 import com.project.shopapp.dtos.UpdateUserDTO;
 import com.project.shopapp.dtos.UserDTO;
+import com.project.shopapp.dtos.UserLoginDTO;
 import com.project.shopapp.exceptions.DataNotFoundException;
 
 import com.project.shopapp.exceptions.InvalidPasswordException;
@@ -37,25 +38,28 @@ public class UserService implements IUserService{
     private final JwtTokenUtils jwtTokenUtil;
     private final AuthenticationManager authenticationManager;
     private final LocalizationUtils localizationUtils;
+
     @Override
     @Transactional
     public User createUser(UserDTO userDTO) throws Exception {
         //register user
-        String phoneNumber = userDTO.getPhoneNumber();
-        // Kiểm tra xem số điện thoại đã tồn tại hay chưa
-        if(userRepository.existsByPhoneNumber(phoneNumber)) {
+        if (!userDTO.getPhoneNumber().isBlank() && userRepository.existsByPhoneNumber(userDTO.getPhoneNumber())) {
             throw new DataIntegrityViolationException("Phone number already exists");
+        }
+        if (!userDTO.getEmail().isBlank() && userRepository.existsByEmail(userDTO.getEmail())) {
+            throw new DataIntegrityViolationException("Email already exists");
         }
         Role role =roleRepository.findById(userDTO.getRoleId())
                 .orElseThrow(() -> new DataNotFoundException(
                         localizationUtils.getLocalizedMessage(MessageKeys.ROLE_DOES_NOT_EXISTS)));
-        if(role.getName().toUpperCase().equals(Role.ADMIN)) {
-            throw new PermissionDenyException("You cannot register an admin account");
+        if (role.getName().equalsIgnoreCase(Role.ADMIN)) {
+            throw new PermissionDenyException("Registering admin accounts is not allowed");
         }
         //convert from userDTO => user
         User newUser = User.builder()
                 .fullName(userDTO.getFullName())
                 .phoneNumber(userDTO.getPhoneNumber())
+                .email(userDTO.getEmail())
                 .password(userDTO.getPassword())
                 .address(userDTO.getAddress())
                 .dateOfBirth(userDTO.getDateOfBirth())
@@ -76,35 +80,48 @@ public class UserService implements IUserService{
     }
 
     @Override
-    public String login(
-            String phoneNumber,
-            String password,
-            Long roleId
-    ) throws Exception {
-        Optional<User> optionalUser = userRepository.findByPhoneNumber(phoneNumber);
-        if(optionalUser.isEmpty()) {
+    public String login(UserLoginDTO userLoginDTO) throws Exception {
+        Optional<User> optionalUser = Optional.empty();
+        String subject = null;
+        // Check if the user exists by phone number
+        if (userLoginDTO.getPhoneNumber() != null && !userLoginDTO.getPhoneNumber().isBlank()) {
+            optionalUser = userRepository.findByPhoneNumber(userLoginDTO.getPhoneNumber());
+            subject = userLoginDTO.getPhoneNumber();
+        }
+
+        // If the user is not found by phone number, check by email
+        if (optionalUser.isEmpty() && userLoginDTO.getEmail() != null) {
+            optionalUser = userRepository.findByEmail(userLoginDTO.getEmail());
+            subject = userLoginDTO.getEmail();
+        }
+
+        // If user is not found, throw an exception
+        if (optionalUser.isEmpty()) {
             throw new DataNotFoundException(localizationUtils.getLocalizedMessage(MessageKeys.WRONG_PHONE_PASSWORD));
         }
-        //return optionalUser.get();//muốn trả JWT token ?
+
+        // Get the existing user
         User existingUser = optionalUser.get();
+
         //check password
         if (existingUser.getFacebookAccountId() == 0
                 && existingUser.getGoogleAccountId() == 0) {
-            if(!passwordEncoder.matches(password, existingUser.getPassword())) {
+            if(!passwordEncoder.matches(userLoginDTO.getPassword(), existingUser.getPassword())) {
                 throw new BadCredentialsException(localizationUtils.getLocalizedMessage(MessageKeys.WRONG_PHONE_PASSWORD));
             }
         }
-
-//        Optional<Role> optionalRole = roleRepository.findById(roleId);
-//        if(optionalRole.isEmpty() || !roleId.equals(existingUser.getRole().getId())) {
-//            throw new DataNotFoundException(localizationUtils.getLocalizedMessage(MessageKeys.ROLE_DOES_NOT_EXISTS));
-//        }
-
-        if(!optionalUser.get().isActive()) {
+        /*
+        Optional<Role> optionalRole = roleRepository.findById(roleId);
+        if(optionalRole.isEmpty() || !roleId.equals(existingUser.getRole().getId())) {
+            throw new DataNotFoundException(localizationUtils.getLocalizedMessage(MessageKeys.ROLE_DOES_NOT_EXISTS));
+        }
+        */
+        if(!existingUser.isActive()) {
             throw new DataNotFoundException(localizationUtils.getLocalizedMessage(MessageKeys.USER_IS_LOCKED));
         }
+
         UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
-                phoneNumber, password,
+                subject, userLoginDTO.getPassword(),
                 existingUser.getAuthorities()
         );
 
@@ -112,6 +129,7 @@ public class UserService implements IUserService{
         authenticationManager.authenticate(authenticationToken);
         return jwtTokenUtil.generateToken(existingUser);
     }
+
     @Transactional
     @Override
     public User updateUser(Long userId, UpdateUserDTO updatedUserDTO) throws Exception {

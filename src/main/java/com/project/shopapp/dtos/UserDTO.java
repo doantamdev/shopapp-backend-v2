@@ -18,16 +18,18 @@ public class UserDTO {
     private String fullName;
 
     @JsonProperty("phone_number")
-    @NotBlank(message = "Phone number is required")
-    private String phoneNumber;
+    private String phoneNumber = "";
 
-    private String address;
+    @JsonProperty("email")
+    private String email = "";
+
+    private String address = "";
 
     @NotBlank(message = "Password cannot be blank")
-    private String password;
+    private String password = "";
 
     @JsonProperty("retype_password")
-    private String retypePassword;
+    private String retypePassword = "";
 
     @JsonProperty("date_of_birth")
     private Date dateOfBirth;
@@ -40,5 +42,6 @@ public class UserDTO {
 
     @NotNull(message = "Role ID is required")
     @JsonProperty("role_id")
+    //role admin not permitted
     private Long roleId;
 }
