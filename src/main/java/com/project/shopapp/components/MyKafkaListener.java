@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-@KafkaListener(id = "groupA", topics = { "get-all-categories", "insert-a-category" })
+@KafkaListener(id = "groupA", topics = { "get-all-categories", "insert-a-category"}, autoStartup = "false")
 public class MyKafkaListener {
     @KafkaHandler
     public void listenCategory(Category category) {

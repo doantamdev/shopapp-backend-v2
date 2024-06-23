@@ -36,6 +36,8 @@ spring:
     port: ${REDIS_PORT:6379}
 
   kafka:
+    listener:
+      auto-startup: false
     client:
       dns:
         lookup: use_dns_cache

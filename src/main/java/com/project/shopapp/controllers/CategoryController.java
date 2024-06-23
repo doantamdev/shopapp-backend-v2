@@ -5,6 +5,7 @@ import com.project.shopapp.components.LocalizationUtils;
 import com.project.shopapp.components.converters.CategoryMessageConverter;
 import com.project.shopapp.dtos.*;
 import com.project.shopapp.models.Category;
+import com.project.shopapp.responses.CategoryResponse;
 import com.project.shopapp.responses.ResponseObject;
 import com.project.shopapp.services.category.CategoryService;
 import com.project.shopapp.utils.MessageKeys;
@@ -29,33 +30,77 @@ public class CategoryController {
     private final LocalizationUtils localizationUtils;
     private final KafkaTemplate<String, Object> kafkaTemplate;
 
+    /*Kafka*/
+//    @PostMapping("")
+//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+//    //Nếu tham số truyền vào là 1 object thì sao ? => Data Transfer Object = Request Object
+//    public ResponseEntity<ResponseObject> createCategory(
+//            @Valid @RequestBody CategoryDTO categoryDTO,
+//            BindingResult result) {
+//        if(result.hasErrors()) {
+//            List<String> errorMessages = result.getFieldErrors()
+//                    .stream()
+//                    .map(FieldError::getDefaultMessage)
+//                    .toList();
+//            return ResponseEntity.ok().body(ResponseObject.builder()
+//                    .message(errorMessages.toString())
+//                    .status(HttpStatus.BAD_REQUEST)
+//                    .data(null)
+//                    .build());
+//
+//        }
+//        Category category = categoryService.createCategory(categoryDTO);
+//        this.kafkaTemplate.send("insert-a-category", category);//producer
+//        this.kafkaTemplate.setMessageConverter(new CategoryMessageConverter());
+//        return ResponseEntity.ok().body(ResponseObject.builder()
+//                .message("Create category successfully")
+//                .status(HttpStatus.OK)
+//                .data(category)
+//                .build());
+//    }
+
+    //Hiện tất cả các categories kafka
+//    @GetMapping("")
+//    public ResponseEntity<ResponseObject> getAllCategories(
+//            @RequestParam("page")     int page,
+//            @RequestParam("limit")    int limit
+//    ) {
+//        List<Category> categories = categoryService.getAllCategories();
+//        /*
+//        this.kafkaTemplate.executeInTransaction(status -> {
+//            categories.forEach(category -> kafkaTemplate.send("get-all-categories", category));
+//            return null;
+//        });
+//         */
+//        this.kafkaTemplate.send("get-all-categories", categories);
+//        return ResponseEntity.ok(ResponseObject.builder()
+//                .message("Get list of categories successfully")
+//                .status(HttpStatus.OK)
+//                .data(categories)
+//                .build());
+//    }
+
     @PostMapping("")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     //Nếu tham số truyền vào là 1 object thì sao ? => Data Transfer Object = Request Object
-    public ResponseEntity<ResponseObject> createCategory(
+    public ResponseEntity<CategoryResponse> createCategory(
             @Valid @RequestBody CategoryDTO categoryDTO,
             BindingResult result) {
+        CategoryResponse categoryResponse = new CategoryResponse();
         if(result.hasErrors()) {
             List<String> errorMessages = result.getFieldErrors()
                     .stream()
                     .map(FieldError::getDefaultMessage)
                     .toList();
-            return ResponseEntity.ok().body(ResponseObject.builder()
-                    .message(errorMessages.toString())
-                    .status(HttpStatus.BAD_REQUEST)
-                    .data(null)
-                    .build());
-
+            categoryResponse.setMessage(localizationUtils.getLocalizedMessage(MessageKeys.INSERT_CATEGORY_FAILED));
+            categoryResponse.setErrors(errorMessages);
+            return ResponseEntity.badRequest().body(categoryResponse);
         }
         Category category = categoryService.createCategory(categoryDTO);
-        this.kafkaTemplate.send("insert-a-category", category);//producer
-        this.kafkaTemplate.setMessageConverter(new CategoryMessageConverter());
-        return ResponseEntity.ok().body(ResponseObject.builder()
-                .message("Create category successfully")
-                .status(HttpStatus.OK)
-                .data(category)
-                .build());
+        categoryResponse.setCategory(category);
+        return ResponseEntity.ok(categoryResponse);
     }
+
 
     //Hiện tất cả các categories
     @GetMapping("")
@@ -64,19 +109,13 @@ public class CategoryController {
             @RequestParam("limit")    int limit
     ) {
         List<Category> categories = categoryService.getAllCategories();
-        /*
-        this.kafkaTemplate.executeInTransaction(status -> {
-            categories.forEach(category -> kafkaTemplate.send("get-all-categories", category));
-            return null;
-        });
-         */
-        this.kafkaTemplate.send("get-all-categories", categories);
         return ResponseEntity.ok(ResponseObject.builder()
                 .message("Get list of categories successfully")
                 .status(HttpStatus.OK)
                 .data(categories)
                 .build());
     }
+
 
     @GetMapping("/{id}")
     public ResponseEntity<ResponseObject> getCategoryById(

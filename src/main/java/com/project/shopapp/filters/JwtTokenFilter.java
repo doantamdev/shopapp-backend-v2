@@ -27,7 +27,7 @@ import java.util.List;
 @Component
 @RequiredArgsConstructor
 public class JwtTokenFilter extends OncePerRequestFilter {
-
+    //http://localhost:8088/swagger-ui/index.html
     @Value("${api.prefix}")
     private String apiPrefix;
 
