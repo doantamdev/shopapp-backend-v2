@@ -3,14 +3,12 @@ server:
 
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/shopapp?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false}
+    url: jdbc:mysql://monorail.proxy.rlwy.net:36640/railway?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: ${MYSQL_ROOT_PASSWORD:12345678Aa}
+    password: ${MYSQL_ROOT_PASSWORD:fzGbtBjujfdbspeLzsnewFfMyQFpMInz}
   jpa:
     show-sql: true
-    hibernate:
-      ddl-auto: none
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
@@ -31,37 +29,31 @@ spring:
     baseline-version: 0
 
   redis:
-    use-redis-cache: false
     host: ${REDIS_HOST:localhost}
     port: ${REDIS_PORT:6379}
 
   kafka:
     listener:
       auto-startup: false
-    client:
-      dns:
-        lookup: use_dns_cache
     bootstrap-servers: ${KAFKA_BROKER_SERVER:localhost}:${KAFKA_BROKER_PORT:9092}
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-      #transaction-id-prefix: tx.
-      properties:
-        "[spring.json.type.mapping]": category:com.project.shopapp.models.Category
     consumer:
       value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
-
 
 api:
   prefix: api/v1
 
 jwt:
-  expiration: 2592000 # 30 days = 30 * 24 * 60 * 60
-  expiration-refresh-token: 5184000 #60 days = 60 * 24 * 60 * 60
+  expiration: 2592000 # 30 days
+  expiration-refresh-token: 5184000 # 60 days
   secretKey: TaqlmGv1iEDMRiFp/pHuID1+T84IABfuA0xXh4GhiUI=
 
-logging.level.org.springframework.security: DEBUG
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
 
-# swagger-ui custom path
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
@@ -69,13 +61,12 @@ springdoc:
     path: /api-docs
   show-actuator: true
 
-# health check
 management:
-  endpoint:
-    health:
-      show-details: always
   endpoints:
     web:
       base-path: /api/v1/actuator
       exposure:
-        include: "health,info"
+        include: ["health", "info"]
+  endpoint:
+    health:
+      show-details: always

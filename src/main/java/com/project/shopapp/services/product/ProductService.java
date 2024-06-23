@@ -67,6 +67,7 @@ public class ProductService implements IProductService{
         productsPage = productRepository.searchProducts(categoryId, keyword, pageRequest);
         return productsPage.map(ProductResponse::fromProduct);
     }
+
     @Override
     @Transactional
     public Product updateProduct(
