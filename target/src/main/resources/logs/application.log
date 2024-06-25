@@ -947,3 +947,131 @@ Security filter chain: no match
 2024-06-23 22:50:48.531 [http-nio-8088-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, */*] and supported [application/json]
 2024-06-23 22:50:48.532 [http-nio-8088-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
 2024-06-23 22:50:48.533 [http-nio-8088-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-23 23:09:57.538 [http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.shopapp.controllers.HealthCheckController#healthCheck()
+2024-06-23 23:09:57.538 [http-nio-8088-exec-7] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/healthcheck/health':
+
+org.apache.catalina.connector.RequestFacade@670cc8cc
+
+servletPath:/api/v1/healthcheck/health
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+accept: */*
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+origin: https://shopapp-backend-v2-1.onrender.com
+sec-fetch-site: cross-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+Security filter chain: no match
+
+
+************************************************************
+
+
+2024-06-23 23:09:57.539 [http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.shopapp.controllers.HealthCheckController#healthCheck()
+2024-06-23 23:09:57.540 [http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/healthcheck/health", parameters={}
+2024-06-23 23:09:57.540 [http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.shopapp.controllers.HealthCheckController#healthCheck()
+2024-06-23 23:09:57.541 [http-nio-8088-exec-7] INFO  c.p.s.c.aspects.PerformanceAspect - Starting execution of healthCheck
+2024-06-23 23:10:00.150 [http-nio-8088-exec-7] INFO  c.p.s.c.aspects.PerformanceAspect - Finished execution of healthCheck
+2024-06-23 23:10:00.150 [http-nio-8088-exec-7] INFO  c.p.s.c.aspects.PerformanceAspect - Execution of healthCheck took 2608 ms
+2024-06-23 23:10:00.153 [http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-23 23:10:00.153 [http-nio-8088-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ResponseObject(message=ok, Computer Name: TAM, status=200 OK, data=null)]
+2024-06-23 23:10:00.155 [http-nio-8088-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-23 23:10:16.704 [http-nio-8088-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.shopapp.controllers.ProductController#getProducts(String, Long, int, int)
+2024-06-23 23:10:16.704 [http-nio-8088-exec-10] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/products?category_id=1&page=10&limit=10':
+
+org.apache.catalina.connector.RequestFacade@7b164ffd
+
+servletPath:/api/v1/products
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+accept: */*
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+origin: https://shopapp-backend-v2-1.onrender.com
+sec-fetch-site: cross-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+Security filter chain: no match
+
+
+************************************************************
+
+
+2024-06-23 23:10:16.704 [http-nio-8088-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.shopapp.controllers.ProductController#getProducts(String, Long, int, int)
+2024-06-23 23:10:16.705 [http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/products?category_id=1&page=10&limit=10", parameters={masked}
+2024-06-23 23:10:16.706 [http-nio-8088-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.shopapp.controllers.ProductController#getProducts(String, Long, int, int)
+2024-06-23 23:10:16.708 [http-nio-8088-exec-10] INFO  c.p.s.c.aspects.PerformanceAspect - Starting execution of getProducts
+2024-06-23 23:10:16.709 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 1, page = 10, limit = 10
+2024-06-23 23:10:18.376 [http-nio-8088-exec-10] INFO  c.p.s.c.aspects.PerformanceAspect - Finished execution of getProducts
+2024-06-23 23:10:18.376 [http-nio-8088-exec-10] INFO  c.p.s.c.aspects.PerformanceAspect - Execution of getProducts took 1668 ms
+2024-06-23 23:10:18.377 [http-nio-8088-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-23 23:10:18.378 [http-nio-8088-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ProductListResponse(products=[], totalPages=0)]
+2024-06-23 23:10:18.379 [http-nio-8088-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-23 23:11:02.613 [http-nio-8088-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.shopapp.controllers.ProductController#getProducts(String, Long, int, int)
+2024-06-23 23:11:02.613 [http-nio-8088-exec-9] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/products?page=1&limit=10':
+
+org.apache.catalina.connector.RequestFacade@4a73396f
+
+servletPath:/api/v1/products
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+accept: */*
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+origin: https://shopapp-backend-v2-1.onrender.com
+sec-fetch-site: cross-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+Security filter chain: no match
+
+
+************************************************************
+
+
+2024-06-23 23:11:02.613 [http-nio-8088-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.shopapp.controllers.ProductController#getProducts(String, Long, int, int)
+2024-06-23 23:11:02.614 [http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/products?page=1&limit=10", parameters={masked}
+2024-06-23 23:11:02.614 [http-nio-8088-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.shopapp.controllers.ProductController#getProducts(String, Long, int, int)
+2024-06-23 23:11:02.615 [http-nio-8088-exec-9] INFO  c.p.s.c.aspects.PerformanceAspect - Starting execution of getProducts
+2024-06-23 23:11:02.615 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 10
+2024-06-23 23:11:04.890 [http-nio-8088-exec-9] INFO  c.p.s.c.aspects.PerformanceAspect - Finished execution of getProducts
+2024-06-23 23:11:04.890 [http-nio-8088-exec-9] INFO  c.p.s.c.aspects.PerformanceAspect - Execution of getProducts took 2276 ms
+2024-06-23 23:11:04.891 [http-nio-8088-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-23 23:11:04.891 [http-nio-8088-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ProductListResponse(products=[BaseResponse(createdAt=2024-04-10T01:46:45, updatedAt=2024-04-10T01:46 (truncated)...]
+2024-06-23 23:11:06.937 [http-nio-8088-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
